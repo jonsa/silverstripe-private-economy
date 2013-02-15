@@ -1,0 +1,18 @@
+#Form_AddForm_Transactions {
+	width: 100%;
+}
+.TableField table.data {
+	border: none !important;
+}
+.TableField table.data thead th {
+	padding: 5px !important;
+	font-size: inherit !important;
+	background: #ffffff !important;
+	border: none !important;
+}
+.TableField table.data tbody td {
+	padding-right: 10px !important;
+}
+.TableField table.data tbody input {
+	margin: 0 !important;
+}
