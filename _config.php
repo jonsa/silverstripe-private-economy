@@ -1,2 +1,2 @@
 <?php
-define('PRIVATE_ECONOMY_DIR', 'private_economy');
+define('PRIVATE_ECONOMY_DIR', 'private-economy');

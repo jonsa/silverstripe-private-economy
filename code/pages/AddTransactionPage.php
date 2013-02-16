@@ -5,12 +5,6 @@ class AddTransactionPage extends Page {
 	static $allowed_children = 'none';
 
 	public static $db = array();
-
-	public function getCMSFields($params = null) {
-		$fields = parent::getCMSFields();
-		$fields->removeByName('Content', true);
-		return $fields;
-	}
 }
 
 class AddTransactionPage_Controller extends Page_Controller {
@@ -100,7 +94,6 @@ class AddTransactionPage_Controller extends Page_Controller {
 			return array(
 					'Form' => $this->AssignForm()
 			);
-		$category_cache = array();
 		$errors = array();
 		$new_transactions = null;
 		if (array_key_exists('new', $data['Transactions'])) {

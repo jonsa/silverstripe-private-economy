@@ -1,0 +1,1002 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0041)http://localhost/ekonomi/index.php/admin/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="Content-language" content="en_US">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<!--<base href="http://localhost/ekonomi/index.php/">--><base href=".">
+<title>SilverStripe CMS | Pages</title>
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/typography.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/layout.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/cms_left.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/cms_right.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/Form.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/greybox.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/SilverStripeNavigator.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/typography(1).css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/tabstrip.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/tree.css">
+<link rel="stylesheet" type="text/css" href="./SilverStripe CMS   Pages_files/TreeDropdownField.css">
+<style type="text/css"></style><link rel="stylesheet" href="http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/themes/advanced/skins/default/ui.css?m=1354705723"></head>
+
+<body class="CMSMain LeftAndMain Controller RequestHandler" style="overflow: hidden; cursor: default;">
+	<div id="Loading" style="background-image: url(http://localhost/ekonomi/index.php/cms/images/loading.gif); background-color: rgb(255, 255, 255); height: 100%; width: 100%; margin: 0px; padding: 0px; z-index: 100000; position: absolute; display: none; background-position: 50% 50%; background-repeat: no-repeat no-repeat;">Loading...<noscript>&lt;h1&gt;The CMS requires that you have JavaScript enabled.&lt;/h1&gt;</noscript></div>
+	
+	<div id="top">
+		<div id="Logo" style="background: url(cms/images/mainmenu/logo.gif) no-repeat; ">
+	
+	<a href="http://www.silverstripe.org/">SilverStripe</a><br>
+	
+</div>
+<ul id="MainMenu">
+
+	<li class="current" id="Menu-CMSMain"><a href="./SilverStripe CMS   Pages_files/SilverStripe CMS   Pages.htm">Pages</a></li>
+
+	<li class="" id="Menu-AssetAdmin"><a href="http://localhost/ekonomi/index.php/admin/assets/">Files &amp; Images</a></li>
+
+	<li class="" id="Menu-CommentAdmin"><a href="http://localhost/ekonomi/index.php/admin/comments/">Comments</a></li>
+
+	<li class="" id="Menu-ReportAdmin"><a href="http://localhost/ekonomi/index.php/admin/reports/">Reports</a></li>
+
+	<li class="" id="Menu-SecurityAdmin"><a href="http://localhost/ekonomi/index.php/admin/security/">Security</a></li>
+
+	<li class="" id="Menu-Help"><a href="http://userhelp.silverstripe.org/">Help</a></li>
+
+</ul>
+
+	</div>
+	
+	<div id="left" style="float: left; height: 520px; overflow: hidden;">
+		<!-- <div class="title"><div style="background-image : url(cms/images/panels/MySite.png)">My Site</div></div> -->
+
+	<div id="treepanes" style="height: 520px; overflow: hidden;">
+		<h2 id="heading_sitetree" class="selected">
+			<img id="sitetree_toggle_closed" src="./SilverStripe CMS   Pages_files/toggle-closed.gif" alt="+" style="display:none;" title="click to open this box">
+			<img id="sitetree_toggle_open" src="./SilverStripe CMS   Pages_files/toggle-open.gif" alt="-" title="click to close box">
+			Page Tree
+		</h2>
+		<div id="sitetree_holder" style="height: 433px;">
+			<div id="TreeTools">
+				<ul id="TreeActions">
+					<li class="action" id="addpage"><button>Create</button></li>
+					<li class="action" id="search"><button>Search</button></li>
+					<li class="action" id="batchactions"><button>Batch Actions</button></li>
+				</ul>
+				<div style="clear:both;"></div>
+				
+				<form class="actionparams" id="Form_AddPageOptionsForm" style="display: none" action="http://localhost/ekonomi/index.php/admin/AddPageOptionsForm">
+					
+					<input class="hidden" type="hidden" id="Form_AddPageOptionsForm_ParentID" name="ParentID" value="">
+					
+					<input class="hidden" type="hidden" id="Form_AddPageOptionsForm_Locale" name="Locale" value="en_US">
+					
+					<div id="PageType" class="field dropdown  nolabel"><div class="middleColumn"><select class=" nolabel" id="Form_AddPageOptionsForm_PageType" name="PageType"></select></div></div>
+					
+					<input class="hidden" type="hidden" id="Form_AddPageOptionsForm_SecurityID" name="SecurityID" value="da98b96c1988c153f180874cd9208748038ec797">
+					
+					<div>
+						<input class="action" type="submit" value="Go">
+					</div>
+				</form>
+				
+				<form class="actionparams" style="display: none" id="search_options" action="http://localhost/ekonomi/index.php/admin/filterSiteTree">
+				<div>
+					<input type="hidden" id="SiteTreeIsFiltered" value="0">
+					
+					<div id="SearchBox">
+						<div class="SearchCriteria">Text:</div>
+						<input type="text" id="SiteTreeSearchTerm" class="SearchCriteria" name="SiteTreeSearchTerm">
+					</div>
+					
+					<div id="ContainerSiteTreeFilterDate" class="SearchCriteriaContainer" style="display:none">
+						<div id="TextSiteTreeFilterDate" class="SearchCriteria">Edited Since:</div>
+						<div id="InputSiteTreeFilterDate"><input type="text" class="text" id="SiteTreeFilterDate" name="SiteTreeFilterDate" value=""></div>
+					</div>
+					<div id="ContainerSiteTreeFilterClassName" class="SearchCriteriaContainer" style="display:none">
+						<div id="TextSiteTreeFilterClassName" class="SearchCriteria">Page type: </div>
+						<div id="InputSiteTreeFilterClassName"><select id="ClassName" name="ClassName"><option value="AddTransactionPage">AddTransactionPage</option><option value="All">All</option><option value="ErrorPage">ErrorPage</option><option value="Page">Page</option><option value="RedirectorPage">RedirectorPage</option><option value="VirtualPage">VirtualPage</option></select></div>
+					</div>
+
+					
+						<div id="ContainerTitle" class="SearchCriteriaContainer" style="display:none">
+							<div id="TextTitle" class="SearchCriteria">Title:</div>
+							<input id="InputTitle" name="Title" class="SearchCriteria">
+						</div>
+					
+						<div id="ContainerMenuTitle" class="SearchCriteriaContainer" style="display:none">
+							<div id="TextMenuTitle" class="SearchCriteria">Navigation Label:</div>
+							<input id="InputMenuTitle" name="MenuTitle" class="SearchCriteria">
+						</div>
+					
+						<div id="ContainerStatus" class="SearchCriteriaContainer" style="display:none">
+							<div id="TextStatus" class="SearchCriteria">Status:</div>
+							<input id="InputStatus" name="Status" class="SearchCriteria">
+						</div>
+					
+						<div id="ContainerMetaDescription" class="SearchCriteriaContainer" style="display:none">
+							<div id="TextMetaDescription" class="SearchCriteria">Description:</div>
+							<input id="InputMetaDescription" name="MetaDescription" class="SearchCriteria">
+						</div>
+					
+						<div id="ContainerMetaKeywords" class="SearchCriteriaContainer" style="display:none">
+							<div id="TextMetaKeywords" class="SearchCriteria">Keywords:</div>
+							<input id="InputMetaKeywords" name="MetaKeywords" class="SearchCriteria">
+						</div>
+					
+					
+					<div id="SearchControls">
+						<select id="SiteTreeFilterAddCriteria">
+							<option value="">Add Criteria</option>
+							<option value="SiteTreeFilterDate">Edited Since</option>
+							<option value="SiteTreeFilterClassName">Page type</option>
+							
+		        				<option value="Title">Title</option>
+							
+		        				<option value="MenuTitle">Navigation Label</option>
+							
+		        				<option value="Status">Status</option>
+							
+		        				<option value="MetaDescription">Description</option>
+							
+		        				<option value="MetaKeywords">Keywords</option>
+							
+						</select>
+						<div id="searchIndicator">&nbsp;</div>
+						<input type="submit" id="SiteTreeSearchClearButton" class="action" value="Clear" title="Clear the search and view all items">
+						<input type="submit" id="SiteTreeSearchButton" class="action" value="Search" title="Search through URL, Title, Menu Title, &amp; Content">
+					</div>
+				</div>
+				</form>
+			
+			<div id="batchactionsforms" style="display: none">
+				<form class="actionparams" style="border:0" id="batchactions_options" action="">
+					<div id="BatchActionParameters" style="display:none"></div>
+				
+					<p>Select the pages that you want to change &amp; then click an action:</p>
+
+					<input type="hidden" name="csvIDs">
+					<input type="hidden" name="SecurityID" value="da98b96c1988c153f180874cd9208748038ec797">
+					<div id="actionParams"></div>
+					<div>
+						<select id="choose_batch_action">
+							
+							<option value="admin/batchactions/publish" class="{doingText:&#39;Publishing pages&#39;}">Publish</option>
+							
+							<option value="admin/batchactions/delete" class="{doingText:&#39;Deleting selected pages from the draft site&#39;}">Delete from draft site</option>
+							
+							<option value="admin/batchactions/deletefromlive" class="{doingText:&#39;Deleting selected pages from the published site&#39;}">Delete from published site</option>
+							
+						</select>
+						<input id="batchactions_go" type="submit" class="action" value="Go">
+					</div>
+				</form>
+			</div>
+			<div class="checkboxAboveTree noBottomBorder">
+				Show: <select id="siteTreeFilterList">
+					
+					<option value="all">All items</option>
+					
+					<option value="CMSSiteTreeFilter_DeletedPages">All pages, including deleted</option>
+					
+					<option value="CMSSiteTreeFilter_ChangedPages">Changed pages</option>
+					
+				</select> <img id="siteTreeFilterActionIndicator" style="display:none" src="./SilverStripe CMS   Pages_files/network-save.gif">
+			</div>
+			
+			<div class="checkboxAboveTree">
+				<img id="checkboxActionIndicator" src="./SilverStripe CMS   Pages_files/network-save.gif">
+				<div>
+					<input type="checkbox" id="sortitems">
+					<label for="sortitems">Allow drag &amp; drop reordering</label>
+				</div>
+			</div>
+			
+			
+
+			</div>
+			<div id="sitetree_ul">
+				<ul id="sitetree" class="tree "><li id="record-0" class="Root nodelete last"><span class="a Root nodelete last"><span class="b"><span class="c"><a href="http://localhost/ekonomi/index.php/admin/show/root" style=""><strong>Your Site Name</strong></a></span></span></span><ul class="">
+<li id="record-1" class="AddTransactionPage"><span class="a AddTransactionPage"><span class="b"><span class="c"><a href="http://localhost/ekonomi/index.php/admin/show/1" class="AddTransactionPage current" title="Page type: AddTransactionPage" style="background-image: url(http://localhost/ekonomi/index.php/sapphire/javascript/tree/images/page-file.gif); background-position: initial initial; background-repeat: no-repeat no-repeat;">Home</a>
+</span></span></span></li>
+<li id="record-2" class="Page current"><span class="a Page current"><span class="b"><span class="c"><a href="http://localhost/ekonomi/index.php/admin/show/2" class="Page closed" title="Page type: Page" style="background-image: url(http://localhost/ekonomi/index.php/sapphire/javascript/tree/images/page-file.gif); background-position: initial initial; background-repeat: no-repeat no-repeat;">Utgifter</a>
+</span></span></span></li>
+<li id="record-3" class="Page"><span class="a Page"><span class="b"><span class="c"><a href="http://localhost/ekonomi/index.php/admin/show/3" class="Page closed" title="Page type: Page" style="background-image: url(http://localhost/ekonomi/index.php/sapphire/javascript/tree/images/page-file.gif); background-position: initial initial; background-repeat: no-repeat no-repeat;">Contact Us</a>
+</span></span></span></li>
+<li id="record-4" class="ErrorPage notinmenu"><span class="a ErrorPage notinmenu"><span class="b"><span class="c"><a href="http://localhost/ekonomi/index.php/admin/show/4" class="ErrorPage notinmenu closed" title="Page type: ErrorPage" style="background-image: url(http://localhost/ekonomi/index.php/sapphire/javascript/tree/images/page-file.gif); background-position: initial initial; background-repeat: no-repeat no-repeat;">Page not found</a>
+</span></span></span></li>
+<li id="record-5" class="ErrorPage notinmenu last"><span class="a ErrorPage notinmenu last"><span class="b"><span class="c"><a href="http://localhost/ekonomi/index.php/admin/show/5" class="ErrorPage notinmenu closed" title="Page type: ErrorPage" style="background-image: url(http://localhost/ekonomi/index.php/sapphire/javascript/tree/images/page-file.gif); background-position: initial initial; background-repeat: no-repeat no-repeat;">Server error</a>
+</span></span></span></li>
+</ul>
+</li></ul>
+			</div>
+		</div>
+
+		<div id="publication_key">
+			Key:
+			<ins style="cursor: help" title="Added to the draft site and not published yet">new</ins>
+			<del style="cursor: help" title="Deleted from the draft site but still on the live site">deleted</del>
+			<span style="cursor: help" title="Edited on the draft site and not published yet" class="modified">changed</span>
+			<span style="cursor: help" title="Excluded from navigation menus" class="notinmenu">hidden</span>
+			
+		</div>		
+		
+		<!--
+		<div id="search_holder" style="display:none">
+			<h2>Search</h2>
+			<div class="unitBody"></div>
+		</div>
+		-->
+
+		<h2 id="heading_versions">
+			<img id="versions_toggle_closed" src="./SilverStripe CMS   Pages_files/toggle-closed.gif" alt="+" title="click to open this box">
+			<img id="versions_toggle_open" src="./SilverStripe CMS   Pages_files/toggle-open.gif" alt="-" style="display:none;" title="click to close box"> 
+			Page Version History
+		</h2>
+		<div class="listpane" id="versions_holder" style="display: none;">
+			<p class="pane_actions" id="versions_actions">
+				
+				<span class="versionChoice">
+					<input type="checkbox" id="versions_comparemode"> <label for="versions_comparemode">Compare mode (click 2 below)</label>
+				</span>
+				<span class="versionChoice">
+					<input type="checkbox" id="versions_showall"> <label for="versions_showall">Show unpublished versions</label>
+				</span>
+			
+			</p>
+			
+			<div class="unitBody">
+			</div>
+		</div>
+
+		<h2 id="heading_reports">
+			<img id="reports_toggle_closed" src="./SilverStripe CMS   Pages_files/toggle-closed.gif" alt="+" title="click to open this box">
+			<img id="reports_toggle_open" src="./SilverStripe CMS   Pages_files/toggle-open.gif" alt="-" style="display:none;" title="click to close box"> 
+			Site Reports
+		</h2>
+		<div id="SideReportForms" style="display:none"></div>
+		<div class="listpane" id="reports_holder" style="display: none;">
+			<p id="ReportSelector_holder">
+				<select name="ReportSelector" id="ReportSelector"><optgroup label="Content reports"><option value="SideReport_ToDo">Pages with To Do items</option><option value="SideReport_EmptyPages">Pages with no content</option><option value="SideReport_RecentlyEdited">Pages edited in the last 2 weeks</option></optgroup></select>
+				<input class="action" type="submit" id="report_select_go" onclick="$(&#39;reports_holder&#39;).showreport();" value="Go">
+			</p>
+			<div class="unitBody"></div>
+		</div>
+	</div>
+
+	</div>
+	
+	<div id="separator" style="float: left; height: 520px; left: 210px;">
+		&nbsp;
+	</div>
+	
+	<div class="right" id="right" style="height: 500px; overflow: hidden; left: 214px; width: 1074px;">
+		
+
+
+	
+<form id="Form_EditForm" action="http://localhost/ekonomi/index.php/admin/EditForm" method="post" enctype="application/x-www-form-urlencoded" autocomplete="off" style="height: 476px;" name="Form_EditForm">
+	
+	<p id="Form_EditForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset style="height: 476px; overflow: hidden;">
+		 
+		
+				<ul class="tabstrip">
+	
+		<li class="first  current"><a href="http://localhost/ekonomi/index.php/admin/#Root_Content_set" id="tab-Root_Content_set">Content</a></li>
+	
+		<li class=" middle"><a href="http://localhost/ekonomi/index.php/admin/#Root_Behaviour" id="tab-Root_Behaviour">Behavior</a></li>
+	
+		<li class=" middle"><a href="http://localhost/ekonomi/index.php/admin/#Root_Todo" id="tab-Root_Todo">To-do</a></li>
+	
+		<li class="last"><a href="http://localhost/ekonomi/index.php/admin/#Root_Access" id="tab-Root_Access">Access</a></li>
+	
+	</ul>
+	
+	
+		<div class="tab" id="Root_Content_set" style="height: 425px;">
+		
+				<ul class="tabstrip">
+	
+		<li class="first  current"><a href="http://localhost/ekonomi/index.php/admin/#Root_Content_set_Main" id="tab-Root_Content_set_Main">Main</a></li>
+	
+		<li class="last"><a href="http://localhost/ekonomi/index.php/admin/#Root_Content_set_Metadata" id="tab-Root_Content_set_Metadata">Metadata</a></li>
+	
+	</ul>
+	
+	
+		<div class="tab" id="Root_Content_set_Main" style="height: 374px;">
+		
+			
+			<div id="Title" class="field text "><label class="left" for="Form_EditForm_Title">Page name</label><div class="middleColumn"><input type="text" class="text" id="Form_EditForm_Title" name="Title" value="Utgifter"></div></div>
+			
+			<div id="MenuTitle" class="field text "><label class="left" for="Form_EditForm_MenuTitle">Navigation label</label><div class="middleColumn"><input type="text" class="text" id="Form_EditForm_MenuTitle" name="MenuTitle" value="Utgifter"></div></div>
+			
+			<div id="Content" class="field htmleditor  htmleditor"><label class="left" for="Form_EditForm_Content">Content</label><div class="middleColumn"><textarea class=" htmleditor" rows="30" cols="20" style="width: 97%; height: 480px; display: none;" tinymce="true" id="Form_EditForm_Content" name="Content"></textarea><span id="Form_EditForm_Content_parent" class="mceEditor defaultSkin" style=""><table id="Form_EditForm_Content_tbl" class="mceLayout" cellspacing="0" cellpadding="0" style="width: 100%; height: 480px;"><tbody><tr class="mceFirst"><td class="mceToolbar mceLeft mceFirst mceLast"><a href="http://localhost/ekonomi/index.php/#" accesskey="q" title="Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X"><!-- IE --></a><table id="Form_EditForm_Content_toolbar1" class="mceToolbar mceToolbarRow1 Enabled" cellpadding="0" cellspacing="0" align=""><tbody><tr><td class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a id="Form_EditForm_Content_bold" href="javascript:;" class="mceButton mceButtonEnabled mce_bold" onmousedown="return false;" onclick="return false;" title="Bold (Ctrl+B)"><span class="mceIcon mce_bold"></span></a></td><td><a id="Form_EditForm_Content_italic" href="javascript:;" class="mceButton mceButtonEnabled mce_italic" onmousedown="return false;" onclick="return false;" title="Italic (Ctrl+I)"><span class="mceIcon mce_italic"></span></a></td><td><a id="Form_EditForm_Content_underline" href="javascript:;" class="mceButton mceButtonEnabled mce_underline" onmousedown="return false;" onclick="return false;" title="Underline (Ctrl+U)"><span class="mceIcon mce_underline"></span></a></td><td><a id="Form_EditForm_Content_strikethrough" href="javascript:;" class="mceButton mceButtonEnabled mce_strikethrough" onmousedown="return false;" onclick="return false;" title="Strikethrough"><span class="mceIcon mce_strikethrough"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_justifyleft" href="javascript:;" class="mceButton mceButtonEnabled mce_justifyleft" onmousedown="return false;" onclick="return false;" title="Align left"><span class="mceIcon mce_justifyleft"></span></a></td><td><a id="Form_EditForm_Content_justifycenter" href="javascript:;" class="mceButton mceButtonEnabled mce_justifycenter" onmousedown="return false;" onclick="return false;" title="Align center"><span class="mceIcon mce_justifycenter"></span></a></td><td><a id="Form_EditForm_Content_justifyright" href="javascript:;" class="mceButton mceButtonEnabled mce_justifyright" onmousedown="return false;" onclick="return false;" title="Align right"><span class="mceIcon mce_justifyright"></span></a></td><td><a id="Form_EditForm_Content_justifyfull" href="javascript:;" class="mceButton mceButtonEnabled mce_justifyfull" onmousedown="return false;" onclick="return false;" title="Align full"><span class="mceIcon mce_justifyfull"></span></a></td><td class="mceToolbarEnd"><span><!-- IE --></span></td><td><select id="Form_EditForm_Content_styleselect" class="mceNativeListBox"><option value="">-- Styles --</option></select></td><td><select id="Form_EditForm_Content_formatselect" class="mceNativeListBox"><option value="">-- Format --</option><option value="p">Paragraph</option><option value="address">Address</option><option value="pre">Preformatted</option><option value="h1">Heading 1</option><option value="h2">Heading 2</option><option value="h3">Heading 3</option><option value="h4">Heading 4</option><option value="h5">Heading 5</option><option value="h6">Heading 6</option></select></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_bullist" href="javascript:;" class="mceButton mceButtonEnabled mce_bullist" onmousedown="return false;" onclick="return false;" title="Unordered list"><span class="mceIcon mce_bullist"></span></a></td><td><a id="Form_EditForm_Content_numlist" href="javascript:;" class="mceButton mceButtonEnabled mce_numlist" onmousedown="return false;" onclick="return false;" title="Ordered list"><span class="mceIcon mce_numlist"></span></a></td><td><a id="Form_EditForm_Content_outdent" href="javascript:;" class="mceButton mce_outdent mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Outdent"><span class="mceIcon mce_outdent"></span></a></td><td><a id="Form_EditForm_Content_indent" href="javascript:;" class="mceButton mceButtonEnabled mce_indent" onmousedown="return false;" onclick="return false;" title="Indent"><span class="mceIcon mce_indent"></span></a></td><td><a id="Form_EditForm_Content_blockquote" href="javascript:;" class="mceButton mceButtonEnabled mce_blockquote" onmousedown="return false;" onclick="return false;" title="Blockquote"><span class="mceIcon mce_blockquote"></span></a></td><td><a id="Form_EditForm_Content_hr" href="javascript:;" class="mceButton mceButtonEnabled mce_hr" onmousedown="return false;" onclick="return false;" title="Insert horizontal ruler"><span class="mceIcon mce_hr"></span></a></td><td><a id="Form_EditForm_Content_charmap" href="javascript:;" class="mceButton mceButtonEnabled mce_charmap" onmousedown="return false;" onclick="return false;" title="Insert custom character"><span class="mceIcon mce_charmap"></span></a></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><table id="Form_EditForm_Content_toolbar2" class="mceToolbar mceToolbarRow2 Enabled" cellpadding="0" cellspacing="0" align=""><tbody><tr><td class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a id="Form_EditForm_Content_undo" href="javascript:;" class="mceButton mce_undo mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Undo (Ctrl+Z)"><span class="mceIcon mce_undo"></span></a></td><td><a id="Form_EditForm_Content_redo" href="javascript:;" class="mceButton mce_redo mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Redo (Ctrl+Y)"><span class="mceIcon mce_redo"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_cut" href="javascript:;" class="mceButton mceButtonEnabled mce_cut" onmousedown="return false;" onclick="return false;" title="Cut"><span class="mceIcon mce_cut"></span></a></td><td><a id="Form_EditForm_Content_copy" href="javascript:;" class="mceButton mceButtonEnabled mce_copy" onmousedown="return false;" onclick="return false;" title="Copy"><span class="mceIcon mce_copy"></span></a></td><td><a id="Form_EditForm_Content_paste" href="javascript:;" class="mceButton mceButtonEnabled mce_paste" onmousedown="return false;" onclick="return false;" title="Paste"><span class="mceIcon mce_paste"></span></a></td><td><a id="Form_EditForm_Content_pastetext" href="javascript:;" class="mceButton mceButtonEnabled mce_pastetext" onmousedown="return false;" onclick="return false;" title="Paste as Plain Text"><span class="mceIcon mce_pastetext"></span></a></td><td><a id="Form_EditForm_Content_pasteword" href="javascript:;" class="mceButton mceButtonEnabled mce_pasteword" onmousedown="return false;" onclick="return false;" title="Paste from Word"><span class="mceIcon mce_pasteword"></span></a></td><td><table id="Form_EditForm_Content_spellchecker" class="mceSplitButton mceSplitButtonEnabled mce_spellchecker" cellpadding="0" cellspacing="0" onmousedown="return false;" title="Toggle spellchecker"><tbody><tr><td class="mceFirst"><a id="Form_EditForm_Content_spellchecker_action" href="javascript:;" class="mceAction mce_spellchecker" onclick="return false;" onmousedown="return false;" title="Toggle spellchecker"><span class="mceAction mce_spellchecker"></span></a></td><td class="mceLast"><a id="Form_EditForm_Content_spellchecker_open" href="javascript:;" class="mceOpen mce_spellchecker" onclick="return false;" onmousedown="return false;" title="Toggle spellchecker"><span class="mceOpen mce_spellchecker"></span></a></td></tr></tbody></table></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_ssimage" href="javascript:;" class="mceButton mceButtonEnabled mce_image" onmousedown="return false;" onclick="return false;" title="Insert Image"><span class="mceIcon mce_image"></span></a></td><td><a id="Form_EditForm_Content_ssflash" href="javascript:;" class="mceButton mceButtonEnabled mce_flash" onmousedown="return false;" onclick="return false;" title="Insert Flash Object"><img class="mceIcon" src="./SilverStripe CMS   Pages_files/flash.gif"></a></td><td><a id="Form_EditForm_Content_sslink" href="javascript:;" class="mceButton mceButtonEnabled mce_link" onmousedown="return false;" onclick="return false;" title="Insert Link"><span class="mceIcon mce_link"></span></a></td><td><a id="Form_EditForm_Content_unlink" href="javascript:;" class="mceButton mce_unlink mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Unlink"><span class="mceIcon mce_unlink"></span></a></td><td><a id="Form_EditForm_Content_anchor" href="javascript:;" class="mceButton mceButtonEnabled mce_anchor" onmousedown="return false;" onclick="return false;" title="Insert/edit anchor"><span class="mceIcon mce_anchor"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_advcode" href="javascript:;" class="mceButton mceButtonEnabled mce_advcode" onmousedown="return false;" onclick="return false;" title="Edit HTML Source"><img class="mceIcon" src="./SilverStripe CMS   Pages_files/html.png"></a></td><td><a id="Form_EditForm_Content_fullscreen" href="javascript:;" class="mceButton mceButtonEnabled mce_fullscreen" onmousedown="return false;" onclick="return false;" title="Toggle fullscreen mode"><span class="mceIcon mce_fullscreen"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_selectall" href="javascript:;" class="mceButton mceButtonEnabled mce_selectall" onmousedown="return false;" onclick="return false;" title="Select All"><span class="mceIcon mce_selectall"></span></a></td><td><a id="Form_EditForm_Content_visualaid" href="javascript:;" class="mceButton mceButtonEnabled mce_visualaid mceButtonActive" onmousedown="return false;" onclick="return false;" title="Toggle guidelines/invisible elements"><span class="mceIcon mce_visualaid"></span></a></td><td><span class="mceSeparator"></span></td><td class="mceToolbarEnd mceLast"><span><!-- IE --></span></td></tr></tbody></table><table id="Form_EditForm_Content_toolbar3" class="mceToolbar mceToolbarRow3 Enabled" cellpadding="0" cellspacing="0" align=""><tbody><tr><td class="mceToolbarStart mceToolbarStartButton mceFirst"><span><!-- IE --></span></td><td><a id="Form_EditForm_Content_table" href="javascript:;" class="mceButton mceButtonEnabled mce_table" onmousedown="return false;" onclick="return false;" title="Inserts a new table"><span class="mceIcon mce_table"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_row_props" href="javascript:;" class="mceButton mce_row_props mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Table row properties"><span class="mceIcon mce_row_props"></span></a></td><td><a id="Form_EditForm_Content_cell_props" href="javascript:;" class="mceButton mce_cell_props mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Table cell properties"><span class="mceIcon mce_cell_props"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_row_before" href="javascript:;" class="mceButton mce_row_before mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert row before"><span class="mceIcon mce_row_before"></span></a></td><td><a id="Form_EditForm_Content_row_after" href="javascript:;" class="mceButton mce_row_after mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert row after"><span class="mceIcon mce_row_after"></span></a></td><td><a id="Form_EditForm_Content_delete_row" href="javascript:;" class="mceButton mce_delete_row mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Delete row"><span class="mceIcon mce_delete_row"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_col_before" href="javascript:;" class="mceButton mce_col_before mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert column before"><span class="mceIcon mce_col_before"></span></a></td><td><a id="Form_EditForm_Content_col_after" href="javascript:;" class="mceButton mce_col_after mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Insert column after"><span class="mceIcon mce_col_after"></span></a></td><td><a id="Form_EditForm_Content_delete_col" href="javascript:;" class="mceButton mce_delete_col mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Remove column"><span class="mceIcon mce_delete_col"></span></a></td><td><span class="mceSeparator"></span></td><td><a id="Form_EditForm_Content_split_cells" href="javascript:;" class="mceButton mce_split_cells mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Split merged table cells"><span class="mceIcon mce_split_cells"></span></a></td><td><a id="Form_EditForm_Content_merge_cells" href="javascript:;" class="mceButton mce_merge_cells mceButtonDisabled" onmousedown="return false;" onclick="return false;" title="Merge table cells"><span class="mceIcon mce_merge_cells"></span></a></td><td class="mceToolbarEnd mceToolbarEndButton mceLast"><span><!-- IE --></span></td></tr></tbody></table><a href="http://localhost/ekonomi/index.php/#" accesskey="z" title="Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X" onfocus="tinyMCE.getInstanceById(&#39;Form_EditForm_Content&#39;).focus();"><!-- IE --></a></td></tr><tr class="mceLast"><td class="mceIframeContainer mceFirst mceLast"><iframe id="Form_EditForm_Content_ifr" src="javascript:""" frameborder="0" style="width: 100%; height: 411px;"></iframe></td></tr></tbody></table></span></div></div>
+			
+		
+		</div>
+	
+		<div class="tab" id="Root_Content_set_Metadata" style="height: 0px; display: none;">
+		
+			
+			<div id="URL" class="field fieldgroup "><label class="left">URL</label><div class="middleColumn"><div class="fieldgroup"><div class="fieldgroupField"><label id="Form_EditForm_BaseUrlLabel">http://localhost/ekonomi/index.php/</label></div><div class="fieldgroupField"><input class="UniqueRestrictedTextField" type="text" id="Form_EditForm_URLSegment" name="URLSegment" value="utgifter" size="30"><input type="hidden" name="restricted-messages[Form_EditForm_URLSegment]" id="Form_EditForm_URLSegment-restricted-message" value="Another page is using that URL. URL must be unique for each page"><input type="hidden" name="restricted-chars[Form_EditForm_URLSegment]" id="Form_EditForm_URLSegment-restricted-chars" value="[^A-Za-z0-9-]+"><input type="hidden" name="restricted-chars[Form_EditForm_URLSegment]" id="Form_EditForm_URLSegment-restricted-chars-replace" value="-"><input type="hidden" name="restricted-chars[Form_EditForm_URLSegment]" id="Form_EditForm_URLSegment-restricted-chars-message" value="URLs can only be made up of letters, digits and hyphens."></div><div class="fieldgroupField"><label id="Form_EditForm_TrailingSlashLabel">/</label></div></div></div></div>
+			
+			
+			
+			<h2 id="Form_EditForm_MetaTagsHeader">Search Engine Meta-tags</h2>
+			
+			<div id="MetaTitle" class="field text "><label class="left" for="Form_EditForm_MetaTitle">Title</label><div class="middleColumn"><input type="text" class="text" id="Form_EditForm_MetaTitle" name="MetaTitle" value="Chart Data"></div></div>
+			
+			<div id="MetaKeywords" class="field textarea "><label class="left" for="Form_EditForm_MetaKeywords">Keywords</label><div class="middleColumn"><textarea id="Form_EditForm_MetaKeywords" name="MetaKeywords" rows="1" cols="20"></textarea></div></div>
+			
+			<div id="MetaDescription" class="field textarea "><label class="left" for="Form_EditForm_MetaDescription">Description</label><div class="middleColumn"><textarea id="Form_EditForm_MetaDescription" name="MetaDescription" rows="5" cols="20"></textarea></div></div>
+			
+			<div id="ExtraMeta" class="field textarea "><label class="left" for="Form_EditForm_ExtraMeta">Custom Meta Tags</label><div class="middleColumn"><textarea id="Form_EditForm_ExtraMeta" name="ExtraMeta" rows="5" cols="20"></textarea></div></div>
+			
+		
+		</div>
+	
+
+		
+		</div>
+	
+		<div class="tab" id="Root_Behaviour" style="display: none; height: 0px;">
+		
+			
+			<div id="ClassName" class="field dropdown "><label class="left" for="Form_EditForm_ClassName">Page type</label><div class="middleColumn"><select id="Form_EditForm_ClassName" name="ClassName"><option selected="selected" value="SharedTransactionsFlotPage">Shared Transactions Flot Page</option><option value="AddTransactionPage">Change to "Add Transaction Page"</option><option value="ErrorPage">Change to "Error Page"</option><option value="Page">Change to "Page"</option><option value="RedirectorPage">Change to "Redirector Page"</option><option value="VirtualPage">Change to "Virtual Page"</option></select></div></div>
+			
+			<div id="ParentType" class="field optionset "><label class="left" for="Form_EditForm_ParentType">Page location</label><div class="middleColumn"><ul id="Form_EditForm_ParentType" class="optionset ">
+<li class="odd valroot"><input id="Form_EditForm_ParentType_root" name="ParentType" type="radio" value="root" checked="checked" class="radio"> <label for="Form_EditForm_ParentType_root">Top-level page</label></li>
+<li class="even valsubpage"><input id="Form_EditForm_ParentType_subpage" name="ParentType" type="radio" value="subpage" class="radio"> <label for="Form_EditForm_ParentType_subpage">Sub-page underneath a parent page (choose below)</label></li>
+</ul>
+</div></div>
+			
+			<div id="ParentID" class="field treedropdown " style="display: none;"><label class="left" for="Form_EditForm_ParentID">Parent page</label><div class="middleColumn"><div id="TreeDropdownField_Form_EditForm_ParentID" class="TreeDropdownField single" href="admin/EditForm/field/ParentID"><input id="Form_EditForm_ParentID" type="hidden" name="ParentID" value="0"><span class="items">(Choose)</span><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div></div></div>
+			
+			<p id="ShowInMenus" class="field checkbox ">
+	<input type="checkbox" id="Form_EditForm_ShowInMenus" name="ShowInMenus" value="1" checked="checked">
+	<label class="right" for="Form_EditForm_ShowInMenus">Show in menus?</label>
+	
+</p>
+			
+			<p id="ShowInSearch" class="field checkbox ">
+	<input type="checkbox" id="Form_EditForm_ShowInSearch" name="ShowInSearch" value="1" checked="checked">
+	<label class="right" for="Form_EditForm_ShowInSearch">Show in search?</label>
+	
+</p>
+			
+			<p id="ProvideComments" class="field checkbox ">
+	<input type="checkbox" id="Form_EditForm_ProvideComments" name="ProvideComments" value="1">
+	<label class="right" for="Form_EditForm_ProvideComments">Allow comments on this page?</label>
+	
+</p>
+			
+			<p>Use this page as the 'home page' for the following domains: 
+							(separate multiple domains with commas)</p>
+			
+			<div id="HomepageForDomain" class="field text "><label class="left" for="Form_EditForm_HomepageForDomain">Domain(s)</label><div class="middleColumn"><input type="text" class="text" id="Form_EditForm_HomepageForDomain" name="HomepageForDomain" value=""></div></div>
+			
+		
+		</div>
+	
+		<div class="tab" id="Root_Todo" style="display: none; height: 0px;">
+		
+			
+			<p>You can use this to keep track of work that needs to be done to the content of your site.  To see all your pages with to do information, open the 'Site Reports' window on the left and select 'To Do'</p>
+			
+			<div id="ToDo" class="field textarea  nolabel"><div class="middleColumn"><textarea id="Form_EditForm_ToDo" class=" nolabel" name="ToDo" rows="10" cols="20"></textarea></div></div>
+			
+		
+		</div>
+	
+		<div class="tab" id="Root_Access" style="display: none; height: 0px;">
+		
+			
+			<h2 id="Form_EditForm_WhoCanViewHeader">Who can view this page?</h2>
+			
+			<div id="CanViewType" class="field optionset  nolabel"><div class="middleColumn"><ul id="Form_EditForm_CanViewType" class="optionset  nolabel">
+<li class="odd valInherit"><input id="Form_EditForm_CanViewType_Inherit" name="CanViewType" type="radio" value="Inherit" checked="checked" class="radio"> <label for="Form_EditForm_CanViewType_Inherit">Inherit from parent page</label></li>
+<li class="even valAnyone"><input id="Form_EditForm_CanViewType_Anyone" name="CanViewType" type="radio" value="Anyone" class="radio"> <label for="Form_EditForm_CanViewType_Anyone">Anyone</label></li>
+<li class="odd valLoggedInUsers"><input id="Form_EditForm_CanViewType_LoggedInUsers" name="CanViewType" type="radio" value="LoggedInUsers" class="radio"> <label for="Form_EditForm_CanViewType_LoggedInUsers">Logged-in users</label></li>
+<li class="even valOnlyTheseUsers"><input id="Form_EditForm_CanViewType_OnlyTheseUsers" name="CanViewType" type="radio" value="OnlyTheseUsers" class="radio"> <label for="Form_EditForm_CanViewType_OnlyTheseUsers">Only these people (choose from list)</label></li>
+</ul>
+</div></div>
+			
+			<div id="ViewerGroups" class="field treemultiselect " style="display: none; visibility: hidden;"><label class="left" for="Form_EditForm_ViewerGroups">Viewer Groups</label><div class="middleColumn">			<div class="TreeDropdownField multiple" href="admin/EditForm/field/ViewerGroups"><input id="Form_EditForm_ViewerGroups" type="hidden" name="ViewerGroups" value=""><span class="items"></span><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div>		</div></div>
+			
+			<h2 id="Form_EditForm_WhoCanEditHeader">Who can edit this page?</h2>
+			
+			<div id="CanEditType" class="field optionset  nolabel"><div class="middleColumn"><ul id="Form_EditForm_CanEditType" class="optionset  nolabel">
+<li class="odd valInherit"><input id="Form_EditForm_CanEditType_Inherit" name="CanEditType" type="radio" value="Inherit" checked="checked" class="radio"> <label for="Form_EditForm_CanEditType_Inherit">Inherit from parent page</label></li>
+<li class="even valLoggedInUsers"><input id="Form_EditForm_CanEditType_LoggedInUsers" name="CanEditType" type="radio" value="LoggedInUsers" class="radio"> <label for="Form_EditForm_CanEditType_LoggedInUsers">Anyone who can log-in to the CMS</label></li>
+<li class="odd valOnlyTheseUsers"><input id="Form_EditForm_CanEditType_OnlyTheseUsers" name="CanEditType" type="radio" value="OnlyTheseUsers" class="radio"> <label for="Form_EditForm_CanEditType_OnlyTheseUsers">Only these people (choose from list)</label></li>
+</ul>
+</div></div>
+			
+			<div id="EditorGroups" class="field treemultiselect " style="display: none; visibility: hidden;"><label class="left" for="Form_EditForm_EditorGroups">Editor Groups</label><div class="middleColumn">			<div class="TreeDropdownField multiple" href="admin/EditForm/field/EditorGroups"><input id="Form_EditForm_EditorGroups" type="hidden" name="EditorGroups" value=""><span class="items"></span><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div>		</div></div>
+			
+		
+		</div>
+	
+
+		
+			<input class="hidden" type="hidden" id="Form_EditForm_ID" name="ID" value="2">
+		
+			<input class="hidden" type="hidden" id="Form_EditForm_LiveURLSegment" name="LiveURLSegment" value="http://localhost/ekonomi/index.php/utgifter/">
+		
+			<input class="hidden" type="hidden" id="Form_EditForm_StageURLSegment" name="StageURLSegment" value="http://localhost/ekonomi/index.php/utgifter/">
+		
+			<input class="hidden nolabel" type="hidden" id="Form_EditForm_Sort" name="Sort" value="2">
+		
+			<input class="hidden" type="hidden" id="Form_EditForm_SecurityID" name="SecurityID" value="da98b96c1988c153f180874cd9208748038ec797">
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	
+	
+
+
+
+
+
+<div id="AjaxSwitchView"></div></form>
+
+
+
+
+<p id="statusMessage" style="opacity: 0; visibility: hidden; display: none;" class="good"></p>
+
+	<div class="ajaxActions" id="form_actions_right">
+		
+			<input class="action  delete" id="Form_EditForm_action_unpublish" type="submit" name="action_unpublish" value="Unpublish" title="Remove this page from the published site">
+		
+			<input class="action  delete" id="Form_EditForm_action_delete" type="submit" name="action_delete" value="Delete from the draft site" title="Delete from the draft site">
+		
+			<input class="action " id="Form_EditForm_action_save" type="submit" name="action_save" value="Save" title="Save">
+		
+			<input class="action " id="Form_EditForm_action_publish" type="submit" name="action_publish" value="Save and Publish" title="Save and Publish">
+		
+	</div></div>
+
+	<div id="contentPanel" style="display: none; height: 520px;">
+		
+			
+<form id="Form_EditorToolbarImageForm" action="http://localhost/ekonomi/index.php/admin/EditorToolbar/ImageForm" method="post" enctype="multipart/form-data">
+
+	
+	<p id="Form_EditorToolbarImageForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		 
+		
+			<h2><img src="./SilverStripe CMS   Pages_files/closeicon.gif" alt="close" title="close">Image</h2>
+		
+			<div id="FolderID" class="field treedropdown "><label class="left" for="Form_EditorToolbarImageForm_FolderID">Folder</label><div class="middleColumn"><div id="TreeDropdownField_Form_EditorToolbarImageForm_FolderID" class="TreeDropdownField single" href="admin/EditorToolbar/ImageForm/field/FolderID"><input id="Form_EditorToolbarImageForm_FolderID" type="hidden" name="FolderID" value=""><span class="items">(Choose)</span><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div></div></div>
+		
+			<div class="field CompositeField  nolabel">
+
+<p class="showUploadField"><a href="http://localhost/ekonomi/index.php/admin/#" style="display: inline;">Upload File</a></p>
+
+<div id="Files[0]" class="field file "><label class="left" for="Form_EditorToolbarImageForm_Files-0">Choose file: </label><div class="middleColumn"><input type="file" name="Files[0]" id="Form_EditorToolbarImageForm_Files-0"><input type="hidden" name="MAX_FILE_SIZE" value=""></div></div>
+
+<div id="UploadFormResponse"></div>
+
+<input class="hidden" type="hidden" id="Form_EditorToolbarImageForm_UploadMode" name="UploadMode" value="CMSEditor">
+</div>
+
+		
+			<div id="getimagesSearch" class="field text "><label class="left" for="Form_EditorToolbarImageForm_getimagesSearch">Search by file name</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarImageForm_getimagesSearch" name="getimagesSearch" value=""></div></div>
+		
+			<div id="FolderImages" class="thumbnailstrip parent=Form_EditorToolbarImageForm_FolderID updatemethod=getimages"><h2>No images found</h2></div>
+		
+			<div id="AltText" class="field text "><label class="left" for="Form_EditorToolbarImageForm_AltText">Alternative text (alt) - shown if image cannot be displayed</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarImageForm_AltText" name="AltText" value="" maxlength="80" size="30"></div></div>
+		
+			<div id="ImageTitle" class="field text "><label class="left" for="Form_EditorToolbarImageForm_ImageTitle">Title text (tooltip) - for additional information about the image</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarImageForm_ImageTitle" name="ImageTitle" value=""></div></div>
+		
+			<div id="CaptionText" class="field text "><label class="left" for="Form_EditorToolbarImageForm_CaptionText">Caption text</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarImageForm_CaptionText" name="CaptionText" value=""></div></div>
+		
+			<div id="CSSClass" class="field dropdown "><label class="left" for="Form_EditorToolbarImageForm_CSSClass">Alignment / style</label><div class="middleColumn"><select id="Form_EditorToolbarImageForm_CSSClass" name="CSSClass"><option value="left">On the left, with text wrapping around.</option><option value="leftAlone">On the left, on its own.</option><option value="right">On the right, with text wrapping around.</option><option value="center">Centered, on its own.</option></select></div></div>
+		
+			<div id="Dimensions" class="field fieldgroup "><label class="left">Dimensions</label><div class="middleColumn"><div class="fieldgroup"><div class="fieldgroupField"><label for="Form_EditorToolbarImageForm_Width">Width</label>
+<input type="text" class="text" id="Form_EditorToolbarImageForm_Width" name="Width" value="100"></div><div class="fieldgroupField"><label for="Form_EditorToolbarImageForm_Height"> x Height</label>
+<input type="text" class="text" id="Form_EditorToolbarImageForm_Height" name="Height" value="100"></div></div></div></div>
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			<input class="action " id="Form_EditorToolbarImageForm_action_insertimage" type="submit" name="action_insertimage" value="Insert image" title="Insert image">
+		
+	</div>
+	
+
+</form>
+
+
+			
+<form id="Form_EditorToolbarLinkForm" action="http://localhost/ekonomi/index.php/admin/EditorToolbar/LinkForm" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="Form_EditorToolbarLinkForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		 
+		
+			<h2><img src="./SilverStripe CMS   Pages_files/closeicon.gif" alt="close" title="close">Link</h2>
+		
+			<div id="LinkType" class="field optionset "><label class="left" for="Form_EditorToolbarLinkForm_LinkType">Link to</label><div class="middleColumn"><ul id="Form_EditorToolbarLinkForm_LinkType" class="optionset ">
+<li class="odd valinternal"><input id="Form_EditorToolbarLinkForm_LinkType_internal" name="LinkType" type="radio" value="internal" class="radio"> <label for="Form_EditorToolbarLinkForm_LinkType_internal">Page on the site</label></li>
+<li class="even valexternal"><input id="Form_EditorToolbarLinkForm_LinkType_external" name="LinkType" type="radio" value="external" class="radio"> <label for="Form_EditorToolbarLinkForm_LinkType_external">Another website</label></li>
+<li class="odd valanchor"><input id="Form_EditorToolbarLinkForm_LinkType_anchor" name="LinkType" type="radio" value="anchor" class="radio"> <label for="Form_EditorToolbarLinkForm_LinkType_anchor">Anchor on this page</label></li>
+<li class="even valemail"><input id="Form_EditorToolbarLinkForm_LinkType_email" name="LinkType" type="radio" value="email" class="radio"> <label for="Form_EditorToolbarLinkForm_LinkType_email">Email address</label></li>
+<li class="odd valfile"><input id="Form_EditorToolbarLinkForm_LinkType_file" name="LinkType" type="radio" value="file" class="radio"> <label for="Form_EditorToolbarLinkForm_LinkType_file">Download a file</label></li>
+</ul>
+</div></div>
+		
+			<div id="internal" class="field treedropdown "><label class="left" for="Form_EditorToolbarLinkForm_internal">Page</label><div class="middleColumn"><div id="TreeDropdownField_Form_EditorToolbarLinkForm_internal" class="TreeDropdownField single" href="admin/EditorToolbar/LinkForm/field/internal"><input id="Form_EditorToolbarLinkForm_internal" type="hidden" name="internal" value=""><input class="items" value="(Choose or type search)"><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div></div></div>
+		
+			<div id="external" class="field text "><label class="left" for="Form_EditorToolbarLinkForm_external">URL</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarLinkForm_external" name="external" value="http://"></div></div>
+		
+			<div id="email" class="field email "><label class="left" for="Form_EditorToolbarLinkForm_email">Email address</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarLinkForm_email" name="email" value=""></div></div>
+		
+			<div id="file" class="field treedropdown "><label class="left" for="Form_EditorToolbarLinkForm_file">File</label><div class="middleColumn"><div id="TreeDropdownField_Form_EditorToolbarLinkForm_file" class="TreeDropdownField single" href="admin/EditorToolbar/LinkForm/field/file"><input id="Form_EditorToolbarLinkForm_file" type="hidden" name="file" value=""><input class="items" value="(Choose or type search)"><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div></div></div>
+		
+			<div id="Anchor" class="field text "><label class="left" for="Form_EditorToolbarLinkForm_Anchor">Anchor</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarLinkForm_Anchor" name="Anchor" value=""></div></div>
+		
+			<div id="LinkText" class="field text "><label class="left" for="Form_EditorToolbarLinkForm_LinkText">Link text</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarLinkForm_LinkText" name="LinkText" value=""></div></div>
+		
+			<div id="Description" class="field text "><label class="left" for="Form_EditorToolbarLinkForm_Description">Link description</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarLinkForm_Description" name="Description" value=""></div></div>
+		
+			<p id="TargetBlank" class="field checkbox ">
+	<input type="checkbox" id="Form_EditorToolbarLinkForm_TargetBlank" name="TargetBlank" value="1">
+	<label class="right" for="Form_EditorToolbarLinkForm_TargetBlank">Open link in a new window?</label>
+	
+</p>
+		
+			<input class="hidden" type="hidden" id="Form_EditorToolbarLinkForm_Locale" name="Locale" value="en_US">
+		
+			<input class="hidden" type="hidden" id="Form_EditorToolbarLinkForm_SecurityID" name="SecurityID" value="da98b96c1988c153f180874cd9208748038ec797">
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			<input class="action " id="Form_EditorToolbarLinkForm_action_insert" type="submit" name="action_insert" value="Insert link" title="Insert link">
+		
+			<input class="action " id="Form_EditorToolbarLinkForm_action_remove" type="submit" name="action_remove" value="Remove link" title="Remove link">
+		
+	</div>
+	
+
+</form>
+
+
+			
+<form id="Form_EditorToolbarFlashForm" action="http://localhost/ekonomi/index.php/admin/EditorToolbar/FlashForm" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="Form_EditorToolbarFlashForm_error" class="message " style="display: none"></p>
+	
+	
+	<fieldset>
+		 
+		
+			<h2><img src="./SilverStripe CMS   Pages_files/closeicon.gif" alt="close" title="close">Flash</h2>
+		
+			<div id="FolderID" class="field treedropdown "><label class="left" for="Form_EditorToolbarFlashForm_FolderID">Folder</label><div class="middleColumn"><div id="TreeDropdownField_Form_EditorToolbarFlashForm_FolderID" class="TreeDropdownField single" href="admin/EditorToolbar/FlashForm/field/FolderID"><input id="Form_EditorToolbarFlashForm_FolderID" type="hidden" name="FolderID" value=""><span class="items">(Choose)</span><a href="http://localhost/ekonomi/index.php/admin/#" title="open" class="editLink">&nbsp;</a></div></div></div>
+		
+			<div id="getflashSearch" class="field text "><label class="left" for="Form_EditorToolbarFlashForm_getflashSearch">Search by file name</label><div class="middleColumn"><input type="text" class="text" id="Form_EditorToolbarFlashForm_getflashSearch" name="getflashSearch" value=""></div></div>
+		
+			<div id="Flash" class="thumbnailstrip parent=Form_EditorToolbarFlashForm_FolderID updatemethod=getflash">
+	<h2>(Choose a folder or search above)</h2>
+</div>
+		
+			<div id="Dimensions" class="field fieldgroup "><label class="left">Dimensions</label><div class="middleColumn"><div class="fieldgroup"><div class="fieldgroupField"><label for="Form_EditorToolbarFlashForm_Width">Width</label>
+<input type="text" class="text" id="Form_EditorToolbarFlashForm_Width" name="Width" value="100"></div><div class="fieldgroupField"><label for="Form_EditorToolbarFlashForm_Height">x Height</label>
+<input type="text" class="text" id="Form_EditorToolbarFlashForm_Height" name="Height" value="100"></div></div></div></div>
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+	
+	<div class="Actions">
+		
+			<input class="action " id="Form_EditorToolbarFlashForm_action_insertflash" type="submit" name="action_insertflash" value="Insert Flash" title="Insert Flash">
+		
+	</div>
+	
+
+</form>
+
+
+		
+	</div>
+	
+	<div id="bottom">
+		<div class="holder">
+			<div id="logInStatus">
+				<a href="http://www.silverstripe.org/" title="Silverstripe Website">SilverStripe CMS</a>&nbsp;-&nbsp;
+				<abbr style="border-style: none" title="This is the SilverStripe CMS version that you are currently running, technically it&#39;s the CVS branch">2.4.9</abbr> &nbsp; &nbsp; &nbsp; 
+				
+					Logged in as <strong>Default Admin</strong> | <a href="http://localhost/ekonomi/index.php/admin/myprofile" id="EditMemberProfile">Profile</a> | <a href="http://localhost/ekonomi/index.php/Security/logout" id="LogoutLink">Log out</a>
+				
+			</div>
+
+			<div id="switchView" class="bottomTabs">
+				
+					<div class="blank"> Page view: </div>
+					<span id="SwitchView"><a class="current">CMS</a><a href="http://localhost/ekonomi/index.php/utgifter/?stage=Stage" class="newWindow" target="site" style="left : -1px;">Draft Site</a><a href="http://localhost/ekonomi/index.php/utgifter/?stage=Live" class="newWindow" target="site" style="left : -3px;">Published Site</a></span>
+				
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="./SilverStripe CMS   Pages_files/base.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/leftandmain.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/en_US.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/en_US(1).js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/cmsmain.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/SilverStripeNavigator.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/tiny_mce_src.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/UpdateURL.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/Validator.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/UniqueFields.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/tiny_mce_improvements.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/jquery.form.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/HtmlEditorField.js"></script><script type="text/javascript">//<![CDATA[
+Behaviour.addLoader(hideLoading);
+
+//]]></script><script type="text/javascript">//<![CDATA[
+siteTreeHints =  {
+ Root :  {
+ allowedChildren :  [ 'SiteTree', 'Page', 'AddTransactionPage', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+ }
+, 
+SiteTree :  {
+ allowedChildren :  [ 'SiteTree', 'Page', 'AddTransactionPage', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+defaultChild : 'Page', 
+defaultParent : '1', 
+allowedParents :  [ 'SiteTree', 'Page', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+ }
+, 
+Page :  {
+ allowedParents :  [ 'SiteTree', 'Page', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+allowedChildren :  [ 'SiteTree', 'Page', 'AddTransactionPage', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+defaultChild : 'Page', 
+defaultParent : '1' }
+, 
+AddTransactionPage :  {
+ allowedParents :  [ 'SiteTree', 'Page', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+allowedChildren : '', 
+defaultChild : '', 
+defaultParent : '1' }
+, 
+ErrorPage :  {
+ allowedParents :  [ 'SiteTree', 'Page', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+allowedChildren :  [ 'SiteTree', 'Page', 'AddTransactionPage', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+defaultChild : 'Page', 
+defaultParent : '1' }
+, 
+RedirectorPage :  {
+ allowedParents :  [ 'SiteTree', 'Page', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+allowedChildren :  [ 'SiteTree', 'Page', 'AddTransactionPage', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+defaultChild : 'Page', 
+defaultParent : '1' }
+, 
+VirtualPage :  {
+ allowedParents :  [ 'SiteTree', 'Page', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+allowedChildren :  [ 'SiteTree', 'Page', 'AddTransactionPage', 'ErrorPage', 'RedirectorPage', 'VirtualPage' ]
+, 
+defaultChild : 'Page', 
+defaultParent : '1' }
+ }
+;
+
+//]]></script><script type="text/javascript">//<![CDATA[
+var _TREE_ICONS = [];
+				_TREE_ICONS['SiteTree'] = {
+					fileIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					openFolderIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					closedFolderIcon: 'sapphire/javascript/tree/images/page-file.gif'
+				};
+				_TREE_ICONS['Page'] = {
+					fileIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					openFolderIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					closedFolderIcon: 'sapphire/javascript/tree/images/page-file.gif'
+				};
+				_TREE_ICONS['AddTransactionPage'] = {
+					fileIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					openFolderIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					closedFolderIcon: 'sapphire/javascript/tree/images/page-file.gif'
+				};
+				_TREE_ICONS['ErrorPage'] = {
+					fileIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					openFolderIcon: 'sapphire/javascript/tree/images/page-file.gif',
+					closedFolderIcon: 'sapphire/javascript/tree/images/page-file.gif'
+				};
+				_TREE_ICONS['RedirectorPage'] = {
+					fileIcon: 'cms/images/treeicons/page-shortcut-file.gif',
+					openFolderIcon: 'cms/images/treeicons/page-shortcut-file.gif',
+					closedFolderIcon: 'cms/images/treeicons/page-shortcut-file.gif'
+				};
+				_TREE_ICONS['VirtualPage'] = {
+					fileIcon: 'cms/images/treeicons/page-shortcut-gold-file.gif',
+					openFolderIcon: 'cms/images/treeicons/page-shortcut-gold-file.gif',
+					closedFolderIcon: 'cms/images/treeicons/page-shortcut-gold-file.gif'
+				};
+				_TREE_ICONS['BrokenLink'] = {
+					fileIcon: 'cms/images/treeicons/brokenlink-file.gif',
+					openFolderIcon: 'cms/images/treeicons/brokenlink-openfolder.gif',
+					closedFolderIcon: 'cms/images/treeicons/brokenlink-closedfolder.gif'
+				};
+
+
+//]]></script><script type="text/javascript">//<![CDATA[
+
+if((typeof tinyMCE != 'undefined')) {
+	tinymce.PluginManager.load("advcode", "../../../sapphire/thirdparty/tinymce-advcode/editor_plugin_src.js");
+tinymce.PluginManager.load("ssbuttons", "../../../cms/javascript/tinymce_ssbuttons/editor_plugin_src.js");
+
+	tinyMCE.init({"friendly_name":"Default CMS","priority":"50","mode":"none","editor_selector":"htmleditor","width":"100%","auto_resize":false,"theme":"advanced","theme_advanced_layout_manager":"SimpleLayout","theme_advanced_toolbar_location":"top","theme_advanced_toolbar_align":"left","theme_advanced_toolbar_parent":"right","blockquote_clear_tag":"p","table_inline_editing":true,"safari_warning":false,"relative_urls":true,"verify_html":true,"body_class":"typography","document_base_url":"http:\/\/localhost\/ekonomi\/index.php\/","urlconverter_callback":"nullConverter","setupcontent_callback":"sapphiremce_setupcontent","cleanup_callback":"sapphiremce_cleanup","use_native_selects":true,"valid_elements":"@[id|class|style|title],#a[id|rel|rev|dir|tabindex|accesskey|type|name|href|target|title|class],-strong\/-b[class],-em\/-i[class],-strike[class],-u[class],#p[id|dir|class|align|style],-ol[class],-ul[class],-li[class],br,img[id|dir|longdesc|usemap|class|src|border|alt=|title|width|height|align],-sub[class],-sup[class],-blockquote[dir|class],-table[border=0|cellspacing|cellpadding|width|height|class|align|summary|dir|id|style],-tr[id|dir|class|rowspan|width|height|align|valign|bgcolor|background|bordercolor|style],tbody[id|class|style],thead[id|class|style],tfoot[id|class|style],#td[id|dir|class|colspan|rowspan|width|height|align|valign|scope|style],-th[id|dir|class|colspan|rowspan|width|height|align|valign|scope|style],caption[id|dir|class],-div[id|dir|class|align|style],-span[class|align|style],-pre[class|align],address[class|align],-h1[id|dir|class|align|style],-h2[id|dir|class|align|style],-h3[id|dir|class|align|style],-h4[id|dir|class|align|style],-h5[id|dir|class|align|style],-h6[id|dir|class|align|style],hr[class],dd[id|class|title|dir],dl[id|class|title|dir],dt[id|class|title|dir],@[id,style,class]","extended_valid_elements":"img[class|src|alt|title|hspace|vspace|width|height|align|onmouseover|onmouseout|name|usemap],iframe[src|name|width|height|align|frameborder|marginwidth|marginheight|scrolling],object[width|height|data|type],param[name|value],map[class|name|id],area[shape|coords|href|target|alt]","language":"en","content_css":"cms\/css\/editor.css, themes\/simplestripe\/css\/editor.css","spellchecker_languages":"+English (United States)=en_US","plugins":"contextmenu,table,emotions,paste,-advcode,spellchecker,media,fullscreen,-ssbuttons","theme_advanced_buttons1":"bold,italic,underline,strikethrough,separator,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,separator,bullist,numlist,outdent,indent,blockquote,hr,charmap","theme_advanced_buttons2":"undo,redo,separator,cut,copy,paste,pastetext,pasteword,spellchecker,separator,ssimage,ssflash,sslink,unlink,anchor,separator,advcode,fullscreen,separator,search,replace,selectall,visualaid,separator","theme_advanced_buttons3":"tablecontrols"});
+}
+
+
+//]]></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src.js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/../../../sapphire/thirdparty/tinymce-advcode/editor_plugin_src.js&#39;,0);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/en.js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(1).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/../../../cms/javascript/tinymce_ssbuttons/editor_plugin_src.js&#39;,1);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/en(1).js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/en(2).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/langs/en.js&#39;,2);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_template_src.js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/themes/advanced/editor_template_src.js&#39;,3);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/en(3).js"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(2).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/contextmenu/editor_plugin_src.js&#39;,4);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(3).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/table/editor_plugin_src.js&#39;,5);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(4).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/emotions/editor_plugin_src.js&#39;,6);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(5).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/paste/editor_plugin_src.js&#39;,7);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(6).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/spellchecker/editor_plugin_src.js&#39;,8);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(7).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/media/editor_plugin_src.js&#39;,9);"></script><script type="text/javascript" src="./SilverStripe CMS   Pages_files/editor_plugin_src(8).js" onload="tinymce.dom.ScriptLoader._onLoad(this,&#39;http://localhost/ekonomi/index.php/sapphire/thirdparty/tinymce/plugins/fullscreen/editor_plugin_src.js&#39;,10);"></script><script type="text/javascript">//<![CDATA[
+Behaviour.register({
+	'#Form_EditForm': {
+		validate : function(fromAnOnBlur) {
+			initialiseForm(this, fromAnOnBlur);
+			
+
+			var error = hasHadFormError();
+			if(!error && fromAnOnBlur) clearErrorMessage(fromAnOnBlur);
+			if(error && !fromAnOnBlur) focusOnFirstErroredField();
+			
+			return !error;
+		},
+		onsubmit : function() {
+			if(typeof this.bypassValidation == 'undefined' || !this.bypassValidation) return this.validate();
+		}
+	},
+	'#Form_EditForm input' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				// Don't perform instant validation for CalendarDateField fields; it creates usability wierdness.
+				if(this.parentNode.className.indexOf('calendardate') == -1 || this.value) {
+					return $('Form_EditForm').validate(this);
+				} else {
+					return true;
+				}
+			}
+		}
+	},
+	'#Form_EditForm textarea' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditForm').validate(this);
+			}
+		}
+	},
+	'#Form_EditForm select' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditForm').validate(this); 
+			}
+		}
+	}
+});
+
+//]]></script><script type="text/javascript">//<![CDATA[
+Behaviour.register({
+	'#Form_EditorToolbarImageForm': {
+		validate : function(fromAnOnBlur) {
+			initialiseForm(this, fromAnOnBlur);
+			
+
+			var error = hasHadFormError();
+			if(!error && fromAnOnBlur) clearErrorMessage(fromAnOnBlur);
+			if(error && !fromAnOnBlur) focusOnFirstErroredField();
+			
+			return !error;
+		},
+		onsubmit : function() {
+			if(typeof this.bypassValidation == 'undefined' || !this.bypassValidation) return this.validate();
+		}
+	},
+	'#Form_EditorToolbarImageForm input' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				// Don't perform instant validation for CalendarDateField fields; it creates usability wierdness.
+				if(this.parentNode.className.indexOf('calendardate') == -1 || this.value) {
+					return $('Form_EditorToolbarImageForm').validate(this);
+				} else {
+					return true;
+				}
+			}
+		}
+	},
+	'#Form_EditorToolbarImageForm textarea' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditorToolbarImageForm').validate(this);
+			}
+		}
+	},
+	'#Form_EditorToolbarImageForm select' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditorToolbarImageForm').validate(this); 
+			}
+		}
+	}
+});
+
+//]]></script><script type="text/javascript">//<![CDATA[
+Behaviour.register({
+	"#Form_EditorToolbarLinkForm": {
+		validateEmailField: function(fieldName) {
+			var el = _CURRENT_FORM.elements[fieldName];
+			if(!el || !el.value) return true;
+
+		 	if(el.value.match(/^[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/i)) {
+		 		return true;
+		 	} else {
+				validationError(el, "Please enter an email address.","validation");
+		 		return false;
+		 	} 	
+		}
+	}
+});
+
+//]]></script><script type="text/javascript">//<![CDATA[
+Behaviour.register({
+	'#Form_EditorToolbarLinkForm': {
+		validate : function(fromAnOnBlur) {
+			initialiseForm(this, fromAnOnBlur);
+			if(typeof fromAnOnBlur != 'undefined'){
+	if(fromAnOnBlur.name == 'email')
+		$('Form_EditorToolbarLinkForm').validateEmailField('email');
+}else{
+	$('Form_EditorToolbarLinkForm').validateEmailField('email');
+}
+
+
+			var error = hasHadFormError();
+			if(!error && fromAnOnBlur) clearErrorMessage(fromAnOnBlur);
+			if(error && !fromAnOnBlur) focusOnFirstErroredField();
+			
+			return !error;
+		},
+		onsubmit : function() {
+			if(typeof this.bypassValidation == 'undefined' || !this.bypassValidation) return this.validate();
+		}
+	},
+	'#Form_EditorToolbarLinkForm input' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				// Don't perform instant validation for CalendarDateField fields; it creates usability wierdness.
+				if(this.parentNode.className.indexOf('calendardate') == -1 || this.value) {
+					return $('Form_EditorToolbarLinkForm').validate(this);
+				} else {
+					return true;
+				}
+			}
+		}
+	},
+	'#Form_EditorToolbarLinkForm textarea' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditorToolbarLinkForm').validate(this);
+			}
+		}
+	},
+	'#Form_EditorToolbarLinkForm select' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditorToolbarLinkForm').validate(this); 
+			}
+		}
+	}
+});
+
+//]]></script><script type="text/javascript">//<![CDATA[
+Behaviour.register({
+	'#Form_EditorToolbarFlashForm': {
+		validate : function(fromAnOnBlur) {
+			initialiseForm(this, fromAnOnBlur);
+			
+
+			var error = hasHadFormError();
+			if(!error && fromAnOnBlur) clearErrorMessage(fromAnOnBlur);
+			if(error && !fromAnOnBlur) focusOnFirstErroredField();
+			
+			return !error;
+		},
+		onsubmit : function() {
+			if(typeof this.bypassValidation == 'undefined' || !this.bypassValidation) return this.validate();
+		}
+	},
+	'#Form_EditorToolbarFlashForm input' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				// Don't perform instant validation for CalendarDateField fields; it creates usability wierdness.
+				if(this.parentNode.className.indexOf('calendardate') == -1 || this.value) {
+					return $('Form_EditorToolbarFlashForm').validate(this);
+				} else {
+					return true;
+				}
+			}
+		}
+	},
+	'#Form_EditorToolbarFlashForm textarea' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditorToolbarFlashForm').validate(this);
+			}
+		}
+	},
+	'#Form_EditorToolbarFlashForm select' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('Form_EditorToolbarFlashForm').validate(this); 
+			}
+		}
+	}
+});
+
+//]]></script><script type="text/javascript">//<![CDATA[
+window.name = windowName('cms');
+
+//]]></script>
+
+</body></html>
