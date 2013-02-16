@@ -72,7 +72,9 @@ class SharedTransactionsFlotPage extends Page {
 					foreach ($transactions as $transaction)
 						$amount += $transaction->Amount;
 					$user_data['data'][$label] = array($label, -$amount);
-					$total_array[$userId][$label] = (double) $total_array[$label][$userId] + $amount;
+					if (!isset($total_array[$label][$userId]))
+						$total_array[$label][$userId] = 0.0;
+					$total_array[$userId][$label] = $total_array[$label][$userId] + $amount;
 				}
 				$json_data[] = $user_data;
 			}
