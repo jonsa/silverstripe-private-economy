@@ -18,6 +18,16 @@ $lang['en_US']['AddTransactionPage']['SaveButton'] = 'Save';
 $lang['en_US']['AddTransactionPage']['SubmitButton'] = 'Submit';
 $lang['en_US']['AddTransactionPage']['Transactions'] = 'Transactions';
 $lang['en_US']['AddTransactionPage']['Type'] = 'Type';
+$lang['en_US']['PrivateTransactionsFlotPage']['PLURALNAME'] = array(
+	'Private Transactions Flot Pags',
+	50,
+	'Pural name of the object, used in dropdowns and to generally identify a collection of this object in the interface'
+);
+$lang['en_US']['PrivateTransactionsFlotPage']['SINGULARNAME'] = array(
+	'Private Transactions Flot Page',
+	50,
+	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
+);
 $lang['en_US']['SharedTransactionsFlotPage']['PLURALNAME'] = array(
 	'Shared Transactions Flot Pages',
 	50,

@@ -18,6 +18,16 @@ $lang['sv_SE']['AddTransactionPage']['SaveButton'] = 'Spara';
 $lang['sv_SE']['AddTransactionPage']['SubmitButton'] = 'Skicka';
 $lang['sv_SE']['AddTransactionPage']['Transactions'] = 'Transaktioner';
 $lang['sv_SE']['AddTransactionPage']['Type'] = 'Typ';
+$lang['en_US']['PrivateTransactionsFlotPage']['PLURALNAME'] = array(
+	'Privata transaktionsgrafssidor',
+	50,
+	'Pural name of the object, used in dropdowns and to generally identify a collection of this object in the interface'
+);
+$lang['en_US']['PrivateTransactionsFlotPage']['SINGULARNAME'] = array(
+	'Privat transaktionsgrafssida',
+	50,
+	'Singular name of the object, used in dropdowns and to generally identify a single object in the interface'
+);
 $lang['sv_SE']['SharedTransactionsFlotPage']['PLURALNAME'] = array(
 	'Delade transaktionsgrafssidor',
 	50,

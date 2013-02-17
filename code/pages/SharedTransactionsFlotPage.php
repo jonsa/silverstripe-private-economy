@@ -6,6 +6,10 @@
  */
 class SharedTransactionsFlotPage extends Page {
 	/**
+	 * @var string
+	 */
+	public $Align = 'left';
+	/**
 	 * @var null|ArrayData
 	 */
 	private $total_bar = null;

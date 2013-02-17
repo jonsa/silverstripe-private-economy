@@ -39,7 +39,8 @@
                         series: {
                             bars: {
                                 show: true,
-                                barWidth: 700000000
+                                barWidth: 700000000,
+                                align: "$Top.Align"
                             }
                         },
                         grid: { hoverable: true },
@@ -70,7 +71,8 @@
                         series: {
                             bars: {
                                 show: true,
-                                barWidth: 700000000
+                                barWidth: 700000000,
+                                align: "$Top.Align"
                             }
                         },
                         grid: { hoverable: true },
