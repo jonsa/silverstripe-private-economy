@@ -21,24 +21,28 @@
         }
 
         var previousPoint = null;
-        $(".chart").bind("plothover", function (event, pos, item) {
-            if (item) {
-                var point = item.dataIndex + "" + item.seriesIndex;
-                if (previousPoint == point) {
-                    moveTooltip(pos.pageX, pos.pageY);
-                } else {
-                    previousPoint = point;
+        $(".chart")
+            .bind("plothover", function (event, pos, item) {
+                if (item) {
+                    var point = item.dataIndex + "" + item.seriesIndex;
+                    if (previousPoint == point) {
+                        moveTooltip(pos.pageX, pos.pageY);
+                    } else {
+                        previousPoint = point;
 
-                    $("#tooltip").remove();
-                    var value = item.datapoint[1].toFixed(2);
+                        $("#tooltip").remove();
+                        var value = item.datapoint[1].toFixed(2);
 
-                    showTooltip(pos.pageX, pos.pageY, item.series.label + ": " + value);
+                        showTooltip(pos.pageX, pos.pageY, item.series.label + ": " + value);
+                    }
                 }
-            }
-            else {
-                $("#tooltip").remove();
-                previousPoint = null;
-            }
-        });
+                else {
+                    $("#tooltip").remove();
+                    previousPoint = null;
+                }
+            })
+            .bind("plotclick", function (event, pos, item) {
+                console.log(item);
+            });
     });
 }(jQuery));

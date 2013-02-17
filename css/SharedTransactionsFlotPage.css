@@ -1,4 +1,43 @@
 div.chart {
-    min-height: 150px;
+    height: 250px;
     margin-bottom: 1em;
+}
+
+table.overview {
+    width: 100%;
+}
+table.overview tr td {
+    padding: 0;
+}
+table.overview .odd td {
+    background-color: #f1f1f1;
+}
+table.overview .odd td, table.overview .even td {
+    border-top: 1px solid #e5e5e5;
+}
+table.overview .odd.last td, table.overview .even.last td {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+table.overview th {
+    text-align: left;
+    background-color: #ffffff;
+}
+table.overview tr div {
+    padding: 5px 10px;
+}
+table.overview .total td {
+    border-top: 2px solid #e5e5e5;
+}
+table.overview .first {
+    width: 15%;
+}
+table.overview .second {
+    width: 10%;
+}
+table.overview .third {
+    width: 20%;
+}
+table.overview td.number, table.overview th.number {
+    text-align: right;
 }

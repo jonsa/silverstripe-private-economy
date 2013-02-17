@@ -34,7 +34,7 @@ function UpdateTableHeaders() {
 }
 
 $(document).ready(function() {
-    $(".TableField table").each(function() {
+    $(".TableField table, table.overview").each(function() {
         $(this).wrap("<div class=\"divTableWithFloatingHeader\" style=\"position:relative\"></div>");
 
         var originalHeaderRow = $("tr:first", this)

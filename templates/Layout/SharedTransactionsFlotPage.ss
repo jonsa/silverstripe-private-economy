@@ -5,7 +5,7 @@
 
         $Content
         <% control TotalPointData %>
-        <h2>Totalt</h2>
+        <h2><% _t('TOTAL', 'Total') %></h2>
         <div class="chart" id="chart-total-point"></div>
         <script type="text/javascript">
             (function ($) {
@@ -16,7 +16,7 @@
                             lines: { show: true },
                             points: { show: true }
                         },
-                        grid: { hoverable: true },
+                        grid: { hoverable: true, clickable: true },
                         xaxis: {
                             mode: "time",
                             timeformat: "%y %b",
@@ -29,7 +29,7 @@
         </script>
         <% end_control %>
         <% control TotalBarData %>
-        <h2>Totalt per månad</h2>
+        <h2><a href="{$Top.Link}cat/0"><% _t('TOTAL_PER_MONTH', 'Total per month') %></a></h2>
         <div class="chart" id="chart-total-bar"></div>
         <script type="text/javascript">
             (function ($) {
@@ -47,7 +47,12 @@
                             mode: "time",
                             timeformat: "%y %b",
                             tickSize: [1, "month"],
-                            tickLength: 2
+                            tickLength: 2,
+                            tickFormatter : function (val, axis) {
+                                var label = $.plot.formatDate(new Date(val), "%y %b");
+                                var link = $.plot.formatDate(new Date(val), "%y-%0m");
+                                return '<a href="{$Top.Link}cat/0/' + link + '">' + label + '</a>';
+                            }
                         }
                     });
                 });
@@ -55,7 +60,7 @@
         </script>
         <% end_control %>
         <% control CategoryData %>
-        <h2>$CategoryTitle</h2>
+        <h2><a href="{$Top.Link}cat/$Category.ID">$Category.Title</a></h2>
         <div class="chart" id="chart-$Id"></div>
         <script type="text/javascript">
             (function ($) {
@@ -73,7 +78,12 @@
                             mode: "time",
                             timeformat: "%y %b",
                             tickSize: [1, "month"],
-                            tickLength: 2
+                            tickLength: 2,
+                            tickFormatter : function (val, axis) {
+                                var label = $.plot.formatDate(new Date(val), "%y %b");
+                                var link = $.plot.formatDate(new Date(val), "%y-%0m");
+                                return '<a href="{$Top.Link}cat/$Category.ID/' + link + '">' + label + '</a>';
+                            }
                         }
                     });
                 });

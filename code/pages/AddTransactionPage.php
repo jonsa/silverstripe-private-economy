@@ -28,7 +28,7 @@ class AddTransactionPage_Controller extends Page_Controller {
 
 	public function AddForm() {
 		$fields = new FieldSet(
-			new TextareaField('Transactions', _t('AddTransactionPage', 'Transactions')));
+			new TextareaField('Transactions', _t('AddTransactionPage.Transactions', 'Transactions')));
 		$types = ClassInfo::subclassesFor('Transaction');
 		unset($types[0]);
 		if (count($types) == 1)
@@ -188,6 +188,7 @@ class AddTransactionPage_Controller extends Page_Controller {
 	}
 
 	protected function javascript() {
+		$url = $this->Link('Categories');
 		return <<<JS
 			(function ($) {
 				$(document).ready(function () {
@@ -195,7 +196,7 @@ class AddTransactionPage_Controller extends Page_Controller {
 						if (!$(this).hasClass("ui-autocomplete-input"))
 							$(this).autocomplete({
 								minLength: 2,
-								source: "/AddTransactionPage_Controller/Categories"
+								source: "$url"
 							});
 					});
 				});

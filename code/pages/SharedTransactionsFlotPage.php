@@ -38,8 +38,21 @@ class SharedTransactionsFlotPage extends Page {
 		return $this->category_data;
 	}
 
-	protected function getTransactions() {
-		return DataObject::get('Transaction', '`Private` = 0');
+	public function getUserTransactions($category, $range = null) {
+		$filter = array();
+		$category = (int) $category;
+		if ($category > 0)
+			$filter[] = '`CategoryID` = ' . $category;
+		if (is_string($range) && strlen($range))
+			$filter[] = "`TransactionDate` LIKE '$range%'";
+		return $this->getTransactions(implode(' AND ', $filter));
+	}
+
+	protected function getTransactions($filter = null) {
+		$where = '`Private` = 0 AND `Unparsed` = 0';
+		if (is_string($filter) && strlen($filter))
+			$where .= ' AND ' . $filter;
+		return DataObject::get('Transaction', $where);
 	}
 
 	public function createData() {
@@ -72,9 +85,9 @@ class SharedTransactionsFlotPage extends Page {
 					foreach ($transactions as $transaction)
 						$amount += $transaction->Amount;
 					$user_data['data'][$label] = array($label, -$amount);
-					if (!isset($total_array[$label][$userId]))
-						$total_array[$label][$userId] = 0.0;
-					$total_array[$userId][$label] = $total_array[$label][$userId] + $amount;
+					if (!isset($total_array[$userId][$label]))
+						$total_array[$userId][$label] = 0.0;
+					$total_array[$userId][$label] = $total_array[$userId][$label] + $amount;
 				}
 				$json_data[] = $user_data;
 			}
@@ -144,11 +157,58 @@ class SharedTransactionsFlotPage extends Page {
 }
 
 class SharedTransactionsFlotPage_Controller extends Page_Controller {
+	public static $allowed_actions = array(
+		'cat'
+	);
+
 	public function init() {
 		parent::init();
 		Requirements::set_write_js_to_body(false);
 		Requirements::javascript(PRIVATE_ECONOMY_DIR . '/js/flot/jquery.flot.js');
 		Requirements::javascript(PRIVATE_ECONOMY_DIR . '/js/SharedTransactionsFlotPage.js');
 		Requirements::css(PRIVATE_ECONOMY_DIR . '/css/SharedTransactionsFlotPage.css');
+		Requirements::themedCSS('SharedTransactionsFlotPage');
+	}
+
+	public function cat(SS_HTTPRequest $request) {
+		Requirements::javascript(PRIVATE_ECONOMY_DIR . '/js/float_header.js');
+		$categoryId = (int) $request->latestParam('ID');
+		if (preg_match('/^[0-9]{4}-[0-9]{2}$/', $request->latestParam('OtherID'), $range))
+			$range = $range[0];
+		else
+			$range = null;
+
+		/** @var $transactions DataObjectSet */
+		$transactions = $this->data()->getUserTransactions($categoryId, $range);
+		if ($transactions)
+			$transactions->sort('TransactionDate', 'DESC');
+		/** @var $names Member[] */
+		$names = array();
+		$users = array();
+		$total = array();
+		foreach ($transactions as $transaction) {
+			if (!array_key_exists($transaction->OwnerID, $names)) {
+				$names[$transaction->OwnerID] = $transaction->Owner();
+				$total[$transaction->OwnerID] = 0;
+			}
+			$users[$transaction->OwnerID][] = $transaction;
+			$total[$transaction->OwnerID] += $transaction->Amount;
+		}
+		$data = array();
+		foreach ($users as $userId => $transactions) {
+			$data[] = new ArrayData(array(
+				'Name' => $names[$userId]->getTitle(),
+				'Total' => $total[$userId],
+				'Transactions' => new DataObjectSet($transactions)
+			));
+		}
+		$data = new DataObjectSet($data);
+		$data->sort('Name');
+		$category = DataObject::get_by_id('TransactionCategory', $categoryId);
+		return array(
+			'Category' => $category,
+			'Range' => $range,
+			'Users' => $data
+		);
 	}
 }

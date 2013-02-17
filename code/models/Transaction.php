@@ -8,7 +8,7 @@ class Transaction extends DataObject {
 	public static $db = array(
 			'RegisterDate' => 'Date',
 			'TransactionDate' => 'Date',
-			'Amount' => 'Float',
+			'Amount' => 'Currency',
 			'Comment' => 'Varchar',
 			'Private' => 'Boolean',
 			'ParsedFrom' => 'Text',
